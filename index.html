@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Report</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="player-form">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col align-self-center">
+            <div class="d-flex flex justify-content-center mb-3">
+              <div class="input-group pname w-50 mt-4">
+                <input
+                  type="text"
+                  class="form-control text-center"
+                  id="pname"
+                  name="pname"
+                  placeholder="Player Name"
+                />
+              </div>
+            </div>
+            <div class="d-flex flex justify-content-center mb-3">
+              <div class="input-group arch w-50">
+                <input
+                  type="text"
+                  class="form-control text-center"
+                  id="num"
+                  name="num"
+                  placeholder="#"
+                  required
+                />
+                <input
+                  type="text"
+                  class="form-control text-center"
+                  id="height"
+                  name="height"
+                  placeholder="Height"
+                  required
+                />
+                <input
+                  type="text"
+                  class="form-control text-center"
+                  id="pos"
+                  name="pos"
+                  placeholder="Position"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="stats d-flex flex-wrap justify-content-center gap-4">
+              <div class="stat">
+                <label for="ppg">PPG</label>
+                <input
+                  placeholder="PPG"
+                  type="number"
+                  id="ppg"
+                  name="ppg"
+                  class="form-control"
+                />
+              </div>
+              <div class="stat">
+                <label for="apg">APG</label>
+                <input
+                  placeholder="APG"
+                  type="number"
+                  id="apg"
+                  name="apg"
+                  class="form-control"
+                />
+              </div>
+              <div class="stat">
+                <label for="rpg">RPG</label>
+                <input
+                  placeholder="RPG"
+                  type="number"
+                  id="rpg"
+                  name="rpg"
+                  class="form-control"
+                />
+              </div>
+              <div class="stat">
+                <label for="fg">FG%</label>
+                <input
+                  type="number"
+                  id="fg"
+                  name="fg"
+                  class="form-control"
+                  placeholder="FG%"
+                />
+              </div>
+              <div class="stat">
+                <label for="tp">3P%</label>
+                <input
+                  type="number"
+                  id="tp"
+                  name="tp"
+                  class="form-control"
+                  placeholder="3P%"
+                />
+              </div>
+              <div class="stat">
+                <label for="bpg">BPG</label>
+                <input
+                  type="number"
+                  id="bpg"
+                  name="bpg"
+                  class="form-control"
+                  placeholder="BPG"
+                />
+              </div>
+              <div class="stat">
+                <label for="spg">SPG</label>
+                <input
+                  type="number"
+                  id="spg"
+                  name="spg"
+                  class="form-control"
+                  placeholder="SPG"
+                />
+              </div>
+              <div class="stat">
+                <label for="tpg">TPG</label>
+                <input
+                  type="number"
+                  id="tpg"
+                  name="tpg"
+                  class="form-control"
+                  placeholder="TO"
+                />
+              </div>
+            </div>
+            <div class="row justify-content-center mt-4">
+              <div class="col-md-5">
+                <textarea
+                  id="notes"
+                  name="notes"
+                  class="form-control"
+                  rows="4"
+                  placeholder="Notes..."
+                ></textarea>
+              </div>
+            </div>
+
+            <button class="done btn btn-primary mx-auto mt-4" type="submit">
+              Done
+            </button>
+
+            <div id="player-output" class="mt-4"></div>
+          </div>
+        </div>
+      </div>
+    </form>
+    <div id="player-output" class="container mt-5 text-center"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

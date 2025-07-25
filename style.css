@@ -1,0 +1,88 @@
+body {
+  background-color: rgb(56, 57, 58);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 100px;
+}
+
+/* Card styling */
+.card {
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+  transition: transform 0.2s ease-in-out;
+  max-width: 500px; /* You can try 500px, 400px, etc. */
+  margin: 0 auto; /* Center it horizontally */
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+/* Player name header */
+.card h3 {
+  font-size: 1.75rem;
+  color: #212529;
+}
+
+/* Stat blocks inside the card */
+.card .d-flex div {
+  background-color: #e9ecef;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+/* Form layout */
+form {
+  background-color: rgb(39, 39, 40);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 800px; /* You can try 500px, 400px, etc. */
+  margin: 0 auto; /* Center it horizontally */
+  margin-top: 2rem;
+}
+
+/* Labels and inputs */
+label.form-label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+input.form-control,
+textarea.form-control {
+  border-radius: 8px;
+  border: 1px solid rgb(39, 39, 40);
+}
+
+/* Buttons */
+button.btn {
+  min-width: 100px;
+}
+
+.edit-btn {
+  background-color: #ffc107;
+  color: #212529;
+  border: none;
+}
+
+.edit-btn:hover {
+  background-color: #e0a800;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+}
+
+.delete-btn:hover {
+  background-color: #bd2130;
+}
+
+.mods {
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+}
